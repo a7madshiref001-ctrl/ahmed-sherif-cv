@@ -1,0 +1,675 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ahmed Sherif — Digital Marketing Specialist</title>
+<meta name="description" content="Ahmed Sherif, Digital Marketing Specialist. Brand analysis, SWOT, market study, then content. Based in Egypt, open to hybrid and remote work.">
+<meta property="og:title" content="Ahmed Sherif — Digital Marketing Specialist">
+<meta property="og:description" content="I study brands before I post. Brand analysis, SWOT, market study, then content.">
+<meta property="og:type" content="profile">
+<meta name="theme-color" content="#F7F5F2">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23111111'/%3E%3Ctext x='10' y='43' font-family='Arial' font-weight='700' font-size='28' fill='%23F7F5F2'%3EAS%3C/text%3E%3Ccircle cx='52' cy='40' r='4' fill='%23F24A3D'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/readexpro-latin-3.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/fonts/fonts.css">
+<style>
+:root{
+  --black:#111111; --bg:#F7F5F2; --accent:#F24A3D;
+  --text-2:#4B4B4B; --caption:#6B6B6B; --surface:#EDE8E1; --line:#E5E2DD;
+  --en:'Readex Pro',system-ui,-apple-system,'Segoe UI',sans-serif;
+  --ar:'Alexandria','Readex Pro',system-ui,sans-serif;
+  --gutter:24px; --container:1280px; --r:16px;
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+@media (min-width:768px){:root{--gutter:60px}}
+@media (min-width:1100px){:root{--gutter:80px}}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--black);font-family:var(--en);font-size:17px;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,p,ul,ol,dl,dd,figure{margin:0;padding:0}
+ul,ol{list-style:none}
+:focus-visible{outline:2px solid var(--black);outline-offset:3px;border-radius:4px}
+::selection{background:var(--black);color:var(--bg)}
+
+.wrap{width:100%;max-width:calc(var(--container) + var(--gutter)*2);margin:0 auto;padding:0 var(--gutter)}
+.ar{font-family:var(--ar);direction:rtl;unicode-bidi:isolate;line-height:1.8}
+.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);flex:none}
+
+/* ---------- Nav ---------- */
+.nav{position:fixed;inset:0 0 auto 0;z-index:50;background:rgba(247,245,242,.92);backdrop-filter:saturate(1.2) blur(8px);-webkit-backdrop-filter:saturate(1.2) blur(8px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.scrolled{border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.mark{font-weight:700;font-size:20px;letter-spacing:.01em;display:inline-flex;align-items:baseline;gap:1px}
+.mark i{width:6px;height:6px;border-radius:50%;background:var(--accent);display:inline-block}
+.nav-links{display:none;gap:32px;font-size:14px;font-weight:500;color:var(--text-2)}
+.nav-links a{padding:8px 0;position:relative;transition:color .2s}
+.nav-links a:hover,.nav-links a.on{color:var(--black)}
+.nav-links a.on::after{content:"";position:absolute;left:0;right:0;bottom:2px;height:2px;background:var(--black)}
+@media (min-width:900px){.nav-links{display:flex}}
+
+/* ---------- Buttons ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:0 24px;border-radius:8px;font:500 14px/1 var(--en);letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;transition:background .2s,color .2s,transform .2s var(--ease)}
+.btn .arw{transition:transform .25s var(--ease)}
+.btn:hover .arw{transform:translateX(4px)}
+.btn:hover .arw.down{transform:translateY(3px)}
+.btn-primary{background:var(--black);color:var(--bg)}
+.btn-primary:hover{background:#000}
+.btn-ghost{border:1px solid var(--black)}
+.btn-ghost:hover{background:var(--black);color:var(--bg)}
+.btn-text{padding:0 4px;letter-spacing:.06em}
+.btn-text .arw{color:var(--accent)}
+.btn-sm{min-height:40px;padding:0 16px;font-size:12px}
+.btn-light{background:var(--bg);color:var(--black)}
+.btn-line-light{border:1px solid rgba(247,245,242,.4);color:var(--bg)}
+.btn-line-light:hover{background:var(--bg);color:var(--black)}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;flex-direction:column}
+.hero-top{height:22svh;min-height:164px;display:flex;align-items:flex-end;padding-bottom:16px}
+.hero-id{display:flex;flex-wrap:wrap;align-items:center;gap:12px 16px;width:100%}
+.name{font-weight:600;font-size:14px;letter-spacing:.14em;text-transform:uppercase}
+.label{display:inline-flex;align-items:center;gap:10px;background:var(--black);color:var(--bg);font-weight:500;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:9px 12px;border-radius:4px;line-height:1}
+.status{display:none;align-items:center;gap:10px;margin-left:auto;font-size:14px;color:var(--text-2)}
+.status .dot{background:#22C55E;box-shadow:0 0 0 4px rgba(34,197,94,.16)}
+@media (min-width:900px){.status{display:inline-flex}}
+.anchor{height:2px;background:var(--black);width:66.666%;transform-origin:left center}
+.anchor.third{width:33.333%}
+@media (max-width:767px){.anchor{width:66.666%}.anchor.third{width:50%}}
+
+.hero-body{flex:1;display:grid;grid-template-columns:1fr;gap:40px;padding-top:24px;padding-bottom:40px}
+.hero h1{font-weight:700;font-size:clamp(40px,10.6vw,48px);line-height:1.08;letter-spacing:-.015em;max-width:11ch}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.lede{margin-top:24px;font-size:18px;line-height:1.55;color:var(--text-2);max-width:34em}
+.lede strong{color:var(--black);font-weight:600}
+.hero .ar{margin-top:12px;font-size:16px;color:var(--text-2);width:fit-content;max-width:100%}
+.cta{display:flex;flex-wrap:wrap;align-items:center;gap:12px 24px;margin-top:32px}
+.portrait{position:relative;border-radius:var(--r);overflow:hidden;background:#EAE0D5;aspect-ratio:4/5}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:50% 14%}
+.portrait figcaption{position:absolute;left:16px;bottom:16px;display:inline-flex;align-items:center;gap:10px;background:rgba(247,245,242,.94);padding:9px 12px;border-radius:999px;font-size:13px;font-weight:500}
+.portrait figcaption .dot{background:#22C55E}
+@media (min-width:900px){.portrait figcaption{display:none}}
+
+.facts{border-top:1px solid var(--line);display:grid;grid-template-columns:1fr;margin-top:8px}
+.facts div{padding:16px 0;border-bottom:1px solid var(--line);display:flex;justify-content:space-between;gap:16px;align-items:baseline}
+.facts dt{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--caption);font-weight:500;flex:none}
+.facts dd{font-size:15px;font-weight:500;text-align:right}
+
+@media (min-width:900px){
+  .hero-body{grid-template-columns:minmax(0,2fr) minmax(0,1fr);gap:0 24px;padding-top:0;padding-bottom:0;align-items:stretch}
+  .hero-copy{padding:40px 24px 40px 0;display:flex;flex-direction:column}
+  .hero h1{font-size:clamp(48px,5.4vw,76px);max-width:12ch}
+  .lede{font-size:20px}
+  .hero .ar{font-size:17px}
+  .portrait{aspect-ratio:auto;margin-top:-2px;border-radius:0 0 var(--r) var(--r);min-height:520px;height:calc(78svh - 40px)}
+  .portrait img{object-position:50% 10%}
+  .facts{grid-template-columns:repeat(3,1fr);gap:24px;margin-top:auto;border-top:0}
+  .facts div{display:block;border-bottom:0;border-top:1px solid var(--line);padding:16px 0 0}
+  .facts dd{text-align:left;margin-top:6px}
+}
+
+/* ---------- Sections ---------- */
+section{padding:80px 0}
+@media (min-width:900px){section{padding:128px 0}}
+.sec-head{margin-bottom:48px}
+.sec-tag{display:flex;align-items:center;gap:12px;font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--text-2);padding-bottom:16px}
+.sec-tag b{font-weight:600;color:var(--black)}
+.sec-head h2{margin-top:24px;font-weight:700;font-size:clamp(30px,7.4vw,36px);line-height:1.12;letter-spacing:-.01em;max-width:17ch}
+.sec-head h2 em{font-style:normal;color:var(--accent)}
+.sec-head .ar{margin-top:16px;font-size:16px;color:var(--text-2);width:fit-content;max-width:100%}
+@media (min-width:900px){.sec-head{margin-bottom:64px}.sec-head h2{font-size:clamp(40px,3.8vw,52px)}.sec-head .ar{font-size:17px}}
+
+/* ---------- Method ---------- */
+.steps{border-top:1px solid var(--black)}
+.step{display:grid;grid-template-columns:1fr;gap:16px;padding:32px 0;border-bottom:1px solid var(--line);position:relative}
+.step:last-child{border-bottom:1px solid var(--black)}
+.step-n{font-weight:700;font-size:44px;line-height:1;letter-spacing:-.02em;color:var(--black)}
+.step-n small{font-size:12px;font-weight:500;letter-spacing:.12em;color:var(--caption);margin-left:8px;vertical-align:middle}
+.step h3{font-weight:700;font-size:24px;line-height:1.2}
+.step p.en{margin-top:8px;color:var(--text-2);max-width:32em}
+.step .ar{font-size:15px;color:var(--text-2);text-align:right}
+.out{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;border:1px solid var(--line);background:#FBFAF8;border-radius:999px;padding:8px 14px;width:fit-content;height:fit-content}
+.out span{color:var(--caption)}
+@media (min-width:900px){
+  .step{grid-template-columns:2fr 5fr 4fr auto;gap:24px;padding:40px 0;align-items:start}
+  .step-n{font-size:64px}
+  .step h3{font-size:28px}
+  .step .ar{font-size:16px;padding-top:6px}
+  .out{margin-top:6px}
+}
+.swot{grid-column:1/-1;display:grid;grid-template-columns:1fr 1fr;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;position:relative;background:#FBFAF8;margin-top:8px}
+.swot div{padding:20px 16px;min-height:112px}
+.swot div:nth-child(1),.swot div:nth-child(2){border-bottom:1px solid var(--line)}
+.swot div:nth-child(odd){border-right:1px solid var(--line)}
+.swot b{display:block;font-size:32px;font-weight:700;line-height:1}
+.swot strong{display:block;margin-top:10px;font-size:15px;font-weight:600}
+.swot span{display:block;font-size:13px;color:var(--caption);margin-top:2px;line-height:1.45}
+.swot::after{content:"";position:absolute;left:50%;top:50%;width:12px;height:12px;margin:-6px 0 0 -6px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px #FBFAF8}
+@media (min-width:900px){
+  .swot{grid-column:2/4;grid-template-columns:repeat(4,1fr)}
+  .swot div{padding:24px;min-height:0}
+  .swot div:nth-child(1),.swot div:nth-child(2){border-bottom:0}
+  .swot div:not(:last-child){border-right:1px solid var(--line)}
+  .swot::after{display:none}
+}
+
+/* ---------- Proof ---------- */
+.proof{background:#FBFAF8;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.stats{display:grid;grid-template-columns:1fr;border-top:1px solid var(--black)}
+.stat{padding:28px 0;border-bottom:1px solid var(--line)}
+.stat b{display:block;font-weight:700;font-size:64px;line-height:1;letter-spacing:-.03em}
+.stat b sup{font-size:.5em;color:var(--accent);vertical-align:top;position:relative;top:.1em;margin-left:2px}
+.stat p{margin-top:12px;color:var(--text-2);max-width:22em}
+@media (min-width:900px){
+  .stats{grid-template-columns:repeat(3,1fr);gap:24px;border-top:0}
+  .stat{border-top:1px solid var(--black);border-bottom:0;padding:32px 0 0}
+  .stat b{font-size:clamp(72px,7vw,96px)}
+}
+.cases{display:grid;grid-template-columns:1fr;gap:24px;margin-top:56px}
+.case{background:var(--bg);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:flex;flex-direction:column;position:relative;overflow:hidden;transition:border-color .25s}
+.case::before{content:"";position:absolute;left:24px;top:0;width:48px;height:2px;background:var(--black);transition:width .35s var(--ease),background .25s}
+.case:hover{border-color:#cfcac2}
+.case:hover::before{width:96px;background:var(--accent)}
+.case-meta{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--caption);font-weight:500;margin-top:8px}
+.case h3{font-size:22px;font-weight:700;line-height:1.25;margin-top:12px}
+.case dl{margin-top:20px;display:grid;gap:16px}
+.case dt{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--caption);font-weight:500}
+.case dd{margin-top:4px;font-size:15.5px;color:var(--text-2);line-height:1.55}
+.case dd strong{color:var(--black);font-weight:600}
+.case .ar{margin-top:20px;padding-top:16px;border-top:1px solid var(--line);font-size:14.5px;color:var(--text-2);text-align:right}
+@media (min-width:900px){.cases{grid-template-columns:repeat(3,1fr);margin-top:80px}.case{padding:32px 24px 24px}.case .ar{margin-top:auto}.case dl{margin-bottom:24px}}
+
+/* ---------- Skills ---------- */
+.skills{display:grid;grid-template-columns:1fr;border-top:1px solid var(--black)}
+.skill{padding:28px 0;border-bottom:1px solid var(--line)}
+.skill h3{font-size:20px;font-weight:700;display:flex;align-items:baseline;gap:12px}
+.skill h3 small{font-size:12px;font-weight:500;letter-spacing:.12em;color:var(--caption)}
+.skill .ar{font-size:14.5px;color:var(--caption);margin-top:4px;width:fit-content}
+.skill ul{margin-top:16px;display:grid;gap:10px}
+.skill li{font-size:16px;color:var(--text-2);padding-left:18px;position:relative}
+.skill li::before{content:"";position:absolute;left:0;top:.72em;width:8px;height:1px;background:var(--black)}
+@media (min-width:700px){.skills{grid-template-columns:1fr 1fr;gap:0 24px}}
+@media (min-width:1100px){.skills{grid-template-columns:repeat(4,1fr);border-top:0}.skill{border-top:1px solid var(--black);border-bottom:0;padding:32px 0 0}}
+
+/* ---------- Experience ---------- */
+.xp{border-top:1px solid var(--black)}
+.job{display:grid;grid-template-columns:1fr;gap:10px;padding:32px 0;border-bottom:1px solid var(--line)}
+.job-when{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--caption);display:flex;align-items:center;gap:10px}
+.job-when.now{color:var(--black)}
+.job h3{font-size:24px;font-weight:700;line-height:1.2}
+.job-where{font-size:15px;color:var(--caption);margin-top:4px}
+.job p.en{color:var(--text-2);max-width:36em}
+.job .ar{font-size:15px;color:var(--text-2);text-align:right;margin-top:6px}
+.job .took{margin-top:14px;font-size:14px;color:var(--black);font-weight:500;display:flex;gap:10px;align-items:baseline}
+.job .took span{font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--caption);flex:none}
+@media (min-width:900px){
+  .job{grid-template-columns:2fr 4fr 6fr;gap:24px;padding:40px 0}
+  .job h3{font-size:28px}
+  .job-when{align-self:start;padding-top:10px}
+}
+
+/* ---------- Certificates ---------- */
+.certs{display:grid;grid-template-columns:1fr;gap:24px}
+.cert{border:1px solid var(--line);border-radius:var(--r);padding:24px;background:#FBFAF8;display:flex;flex-direction:column;min-height:220px}
+.cert-by{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--caption);display:flex;align-items:center;gap:10px}
+.cert h3{font-size:22px;font-weight:700;line-height:1.25;margin-top:16px}
+.cert p{margin-top:10px;font-size:15px;color:var(--text-2)}
+.cert .ar{margin-top:auto;padding-top:20px;font-size:14.5px;color:var(--text-2);text-align:right}
+@media (min-width:900px){.certs{grid-template-columns:repeat(3,1fr)}}
+.edu{margin-top:48px;border-top:1px solid var(--black);display:grid;grid-template-columns:1fr}
+.edu div{padding:24px 0;border-bottom:1px solid var(--line)}
+.edu dt{font-size:12px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--caption)}
+.edu dd{margin-top:8px;font-size:18px;font-weight:600;line-height:1.35}
+.edu dd small{display:block;font-size:15px;font-weight:400;color:var(--text-2);margin-top:4px}
+@media (min-width:900px){.edu{grid-template-columns:repeat(3,1fr);gap:24px;border-top:0;margin-top:64px}.edu div{border-top:1px solid var(--black);border-bottom:0}}
+
+/* ---------- Contact ---------- */
+.contact{padding:0 0 80px}
+.cta-block{background:var(--black);color:var(--bg);border-radius:24px;padding:48px 24px;position:relative;overflow:hidden}
+.cta-block .sec-tag{color:rgba(247,245,242,.64)}
+.cta-block .sec-tag b{color:var(--bg)}
+.cta-block .anchor{background:var(--bg)}
+.cta-block h2{margin-top:24px;font-size:clamp(34px,8.6vw,44px);font-weight:700;line-height:1.1;letter-spacing:-.015em;max-width:14ch}
+.cta-block h2 em{font-style:normal;color:var(--accent)}
+.cta-block .ar{margin-top:16px;font-size:16px;color:rgba(247,245,242,.72);width:fit-content;max-width:100%}
+.cta-block .cta{margin-top:32px}
+.ways{margin-top:48px;display:grid;grid-template-columns:1fr;border-top:1px solid #2B2B2B}
+.ways a{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 0;border-bottom:1px solid #2B2B2B;transition:padding .25s var(--ease)}
+.ways a:hover{padding-left:8px}
+.ways small{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:rgba(247,245,242,.56);font-weight:500}
+.ways span{display:block;font-size:17px;font-weight:500;margin-top:4px;word-break:break-word}
+.ways i{font-style:normal;color:var(--accent);font-size:20px;transition:transform .25s var(--ease)}
+.ways a:hover i{transform:translateX(4px)}
+@media (min-width:900px){
+  .contact{padding-bottom:96px}
+  .cta-block{padding:96px 80px}
+  .cta-block h2{font-size:clamp(48px,5vw,68px)}
+  .ways{grid-template-columns:repeat(3,1fr);gap:0 24px;border-top:0;margin-top:72px}
+  .ways a{border-top:1px solid #2B2B2B;border-bottom:0;padding:20px 0 0;align-items:flex-start}
+  .ways a:hover{padding-left:0}
+}
+footer{padding:24px 0 40px;font-size:13px;color:var(--caption)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px 24px}
+
+/* ---------- Side index ---------- */
+.rail{display:none}
+@media (min-width:1360px){
+  .rail{display:flex;flex-direction:column;gap:14px;position:fixed;right:28px;top:50%;transform:translateY(-50%);z-index:40;font-size:11px;font-weight:500;letter-spacing:.1em;color:#A3A3A3}
+  .rail a{display:flex;align-items:center;justify-content:flex-end;gap:8px;transition:color .2s}
+  .rail a::after{content:"";width:12px;height:1px;background:currentColor;transition:width .25s var(--ease),background .2s}
+  .rail a:hover{color:var(--black)}
+  .rail a.on{color:var(--black)}
+  .rail a.on::after{width:28px;background:var(--accent);height:2px}
+}
+
+/* ---------- Motion ---------- */
+.js .rv{opacity:0;transform:translateY(18px);transition:opacity .7s var(--ease),transform .7s var(--ease);transition-delay:var(--d,0ms)}
+.js .rv.in{opacity:1;transform:none}
+.js .anchor{transform:scaleX(0);transition:transform .9s var(--ease)}
+.js .anchor.in{transform:scaleX(1)}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .js .rv,.js .anchor{opacity:1;transform:none;transition:none}
+}
+@media print{.nav,.rail{display:none}.js .rv,.js .anchor{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<script>document.documentElement.classList.add('js')</script>
+
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a class="mark" href="#top" aria-label="Ahmed Sherif, back to top">AS<i></i></a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#method">Method</a>
+      <a href="#proof">Proof</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="assets/Ahmed_Sherif_CV.pdf" download>Download CV <span class="arw down">↓</span></a>
+  </div>
+</header>
+
+<nav class="rail" aria-hidden="true">
+  <a href="#top" data-s="top">00</a>
+  <a href="#method" data-s="method">01</a>
+  <a href="#proof" data-s="proof">02</a>
+  <a href="#skills" data-s="skills">03</a>
+  <a href="#experience" data-s="experience">04</a>
+  <a href="#certificates" data-s="certificates">05</a>
+  <a href="#contact" data-s="contact">06</a>
+</nav>
+
+<main>
+<!-- ============ HERO ============ -->
+<div class="hero" id="top">
+  <div class="wrap hero-top">
+    <div class="hero-id rv">
+      <span class="name">Ahmed Sherif</span>
+      <span class="label"><span class="dot"></span>Digital Marketing Specialist</span>
+      <span class="status"><span class="dot"></span>Open to work · Egypt · Hybrid · Remote</span>
+    </div>
+  </div>
+  <div class="wrap"><div class="anchor"></div></div>
+  <div class="wrap hero-body">
+    <div class="hero-copy">
+      <h1 class="rv" style="--d:80ms">I study brands <em>before</em> I post.</h1>
+      <p class="lede rv" style="--d:160ms">I analyze the brand, run the <strong>SWOT</strong>, study the market, and only then build the content. Same order, every time.</p>
+      <p class="ar rv" lang="ar" style="--d:200ms">بحلل البراند وأدرس السوق الأول، وبعدين أبني المحتوى.</p>
+      <div class="cta rv" style="--d:260ms">
+        <a class="btn btn-primary" href="assets/Ahmed_Sherif_CV.pdf" download>Download CV <span class="arw down">↓</span></a>
+        <a class="btn btn-text" href="#method">See how I work <span class="arw">→</span></a>
+      </div>
+      <dl class="facts rv" style="--d:340ms">
+        <div><dt>Based in</dt><dd>Egypt · Hybrid / Remote</dd></div>
+        <div><dt>Languages</dt><dd>Arabic (native) · English (B1)</dd></div>
+        <div><dt>Certified by</dt><dd>Google · AmCham Egypt · Anthropic</dd></div>
+      </dl>
+    </div>
+    <figure class="portrait rv" style="--d:120ms">
+      <img src="assets/portrait.jpg" width="1024" height="1536" alt="Ahmed Sherif, Digital Marketing Specialist" fetchpriority="high">
+      <figcaption><span class="dot"></span>Open to work</figcaption>
+    </figure>
+  </div>
+</div>
+
+<!-- ============ 01 METHOD ============ -->
+<section id="method">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag rv"><b>01</b><span class="dot"></span>Method</div>
+      <div class="anchor third"></div>
+      <h2 class="rv">Four steps. The <em>same</em> order for every brand.</h2>
+      <p class="ar rv" lang="ar">مفيش محتوى بيتكتب قبل ما الصورة كلها تبقى واضحة.</p>
+    </div>
+
+    <ol class="steps">
+      <li class="step rv">
+        <div class="step-n">01</div>
+        <div>
+          <h3>Brand Analysis</h3>
+          <p class="en">I read the brand as it is today: what it sells, who it talks to, and how it looks and sounds.</p>
+        </div>
+        <p class="ar" lang="ar">بفهم البراند زي ما هو دلوقتي: بيبيع إيه، بيكلم مين، وشكله وصوته عاملين إزاي.</p>
+        <div class="out"><span>Output</span>Brand snapshot</div>
+      </li>
+
+      <li class="step rv">
+        <div class="step-n">02</div>
+        <div>
+          <h3>SWOT Analysis</h3>
+          <p class="en">Strengths, weaknesses, opportunities and threats. All four on one page, so the plan starts from facts.</p>
+        </div>
+        <p class="ar" lang="ar">نقط القوة والضعف، والفرص والمخاطر. الأربعة في صفحة واحدة عشان الخطة تبدأ من حقايق.</p>
+        <div class="out"><span>Output</span>SWOT sheet</div>
+        <div class="swot" aria-label="SWOT grid">
+          <div><b>S</b><strong>Strengths</strong><span>What the brand already does well.</span></div>
+          <div><b>W</b><strong>Weaknesses</strong><span>What holds it back from inside.</span></div>
+          <div><b>O</b><strong>Opportunities</strong><span>Gaps in the market it can take.</span></div>
+          <div><b>T</b><strong>Threats</strong><span>Risks and limits from outside.</span></div>
+        </div>
+      </li>
+
+      <li class="step rv">
+        <div class="step-n">03</div>
+        <div>
+          <h3>Market Study</h3>
+          <p class="en">I study the market and the competitors to find how this product or service can really sell.</p>
+        </div>
+        <p class="ar" lang="ar">بدرس السوق والمنافسين عشان أعرف المنتج أو الخدمة هتتباع إزاي.</p>
+        <div class="out"><span>Output</span>Selling angle</div>
+      </li>
+
+      <li class="step rv">
+        <div class="step-n">04</div>
+        <div>
+          <h3>Content Creation</h3>
+          <p class="en">Only now I build the content: pillars, a calendar, hooks, posts, carousels and reel scripts.</p>
+        </div>
+        <p class="ar" lang="ar">دلوقتي بس ببني المحتوى: الأعمدة، الخطة، الهوكات، البوستات والريلز.</p>
+        <div class="out"><span>Output</span>Content plan</div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ============ 02 PROOF ============ -->
+<section class="proof" id="proof">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag rv"><b>02</b><span class="dot"></span>Proof</div>
+      <div class="anchor third"></div>
+      <h2 class="rv">The method, used on <em>real</em> brands.</h2>
+      <p class="ar rv" lang="ar">أرقام من شغل اتعمل فعلًا، مش وعود.</p>
+    </div>
+
+    <div class="stats">
+      <div class="stat rv"><b data-count="324">324</b><p>Instagram posts analyzed to build one content bank.</p></div>
+      <div class="stat rv" style="--d:80ms"><b data-count="223">223</b><p>Sales conversations run to test three message styles.</p></div>
+      <div class="stat rv" style="--d:160ms"><b><span data-count="10">10</span><sup>+</sup></b><p>Websites and systems designed, built and live.</p></div>
+    </div>
+
+    <div class="cases">
+      <article class="case rv">
+        <p class="case-meta">Specialty coffee · Saudi Arabia</p>
+        <h3>From a content audit to a full system.</h3>
+        <dl>
+          <div><dt>What I did</dt><dd>Audited <strong>55 posts</strong>, wrote the content direction, then built the website, the menu and the cashier system.</dd></div>
+          <div><dt>Result</dt><dd><strong>Paying client</strong> on a one-year contract.</dd></div>
+        </dl>
+        <p class="ar" lang="ar">بدأت بتحليل المحتوى، وانتهت بعقد سنة.</p>
+      </article>
+
+      <article class="case rv" style="--d:80ms">
+        <p class="case-meta">Gym, two branches · Egypt</p>
+        <h3>One campaign idea, carried everywhere.</h3>
+        <dl>
+          <div><dt>What I did</dt><dd>Built the campaign idea, an <strong>8-slide carousel</strong>, and the website for the two branches.</dd></div>
+          <div><dt>Result</dt><dd>Website <strong>live</strong>, with one clear message across posts and pages.</dd></div>
+        </dl>
+        <p class="ar" lang="ar">فكرة واحدة ماشية في البوست والموقع.</p>
+      </article>
+
+      <article class="case rv" style="--d:160ms">
+        <p class="case-meta">Cafés · Egypt &amp; Saudi Arabia</p>
+        <h3>Testing the message, not guessing it.</h3>
+        <dl>
+          <div><dt>What I did</dt><dd>Found <strong>291 leads</strong> and tested three ways to open the conversation.</dd></div>
+          <div><dt>Result</dt><dd>Best message: <strong>16% reply rate</strong>. Weakest: 4%. Now I know which one works.</dd></div>
+        </dl>
+        <p class="ar" lang="ar">الرسالة بتتجرّب بالأرقام، مش بالتخمين.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 03 SKILLS ============ -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag rv"><b>03</b><span class="dot"></span>Skills</div>
+      <div class="anchor third"></div>
+      <h2 class="rv">What I bring to a <em>marketing</em> team.</h2>
+      <p class="ar rv" lang="ar">أربع مجموعات: تفكير، محتوى، سيستمز، وتعامل مع الناس.</p>
+    </div>
+
+    <div class="skills">
+      <div class="skill rv">
+        <h3><small>A</small>Strategy</h3>
+        <p class="ar" lang="ar">التفكير قبل التنفيذ</p>
+        <ul>
+          <li>Brand analysis</li>
+          <li>SWOT analysis</li>
+          <li>Market &amp; competitor research</li>
+          <li>Audience research</li>
+          <li>Positioning &amp; selling angle</li>
+        </ul>
+      </div>
+      <div class="skill rv" style="--d:80ms">
+        <h3><small>B</small>Content</h3>
+        <p class="ar" lang="ar">محتوى مبني على الخطة</p>
+        <ul>
+          <li>Content strategy &amp; pillars</li>
+          <li>Content calendar</li>
+          <li>Arabic copywriting (Egyptian &amp; Gulf)</li>
+          <li>Carousels &amp; captions</li>
+          <li>Reel hooks &amp; scripts</li>
+        </ul>
+      </div>
+      <div class="skill rv" style="--d:160ms">
+        <h3><small>C</small>AI &amp; Systems</h3>
+        <p class="ar" lang="ar">ببني السيستم بنفسي</p>
+        <ul>
+          <li>Building systems with Claude</li>
+          <li>Websites &amp; landing pages</li>
+          <li>Dashboards &amp; simple CRMs</li>
+          <li>AI image &amp; video tools</li>
+          <li>Workflow automation</li>
+        </ul>
+      </div>
+      <div class="skill rv" style="--d:240ms">
+        <h3><small>D</small>People</h3>
+        <p class="ar" lang="ar">من الكول سنتر والريسبشن</p>
+        <ul>
+          <li>Problem solving</li>
+          <li>Clear communication</li>
+          <li>Handling objections</li>
+          <li>Calm under pressure</li>
+          <li>Customer-first thinking</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 04 EXPERIENCE ============ -->
+<section id="experience" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag rv"><b>04</b><span class="dot"></span>Experience</div>
+      <div class="anchor third"></div>
+      <h2 class="rv">I talked to customers <em>before</em> I marketed to them.</h2>
+      <p class="ar rv" lang="ar">كل شغلانة علّمتني حاجة بستخدمها في التسويق النهارده.</p>
+    </div>
+
+    <div class="xp">
+      <article class="job rv">
+        <p class="job-when now"><span class="dot"></span>Now</p>
+        <div>
+          <h3>Marketer</h3>
+          <p class="job-where">Freelance · Egypt &amp; Saudi Arabia</p>
+        </div>
+        <div>
+          <p class="en">Brand analysis, market research and content for cafés, restaurants and gyms. I also build the websites and systems the plan needs.</p>
+          <p class="ar" lang="ar">تحليل براند، دراسة سوق، ومحتوى. وببني المواقع والسيستمز اللي الخطة محتاجاها.</p>
+          <p class="took"><span>Took from it</span>How to turn research into a plan a business can use.</p>
+        </div>
+      </article>
+
+      <article class="job rv">
+        <p class="job-when">2025</p>
+        <div>
+          <h3>Call Center Agent</h3>
+          <p class="job-where">Aura Communication · English account</p>
+        </div>
+        <div>
+          <p class="en">Daily calls with customers in English. Solved complaints, handled objections, and hit quality targets under time pressure.</p>
+          <p class="ar" lang="ar">مكالمات يومية بالإنجليزي: حل شكاوى، رد على اعتراضات، وشغل تحت ضغط.</p>
+          <p class="took"><span>Took from it</span>How customers really talk about their problems.</p>
+        </div>
+      </article>
+
+      <article class="job rv">
+        <p class="job-when">Earlier</p>
+        <div>
+          <h3>Receptionist</h3>
+          <p class="job-where">Front desk</p>
+        </div>
+        <div>
+          <p class="en">The first person a customer meets. Welcomed visitors, organized requests, and solved small problems on the spot.</p>
+          <p class="ar" lang="ar">أول واحد العميل بيقابله: استقبال، تنظيم، وحل المشاكل في وقتها.</p>
+          <p class="took"><span>Took from it</span>The first impression decides the rest.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 05 CERTIFICATES ============ -->
+<section id="certificates" style="padding-top:0">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-tag rv"><b>05</b><span class="dot"></span>Certificates &amp; Education</div>
+      <div class="anchor third"></div>
+      <h2 class="rv">Certified, and <em>still</em> learning.</h2>
+      <p class="ar rv" lang="ar">تلات جهات: جوجل، الغرفة الأمريكية، وأنثروبيك.</p>
+    </div>
+
+    <div class="certs">
+      <article class="cert rv">
+        <p class="cert-by"><span class="dot"></span>Google</p>
+        <h3>Fundamentals of Digital Marketing</h3>
+        <p>Google Digital Garage</p>
+        <p class="ar" lang="ar">أساسيات التسويق الرقمي من جوجل.</p>
+      </article>
+      <article class="cert rv" style="--d:80ms">
+        <p class="cert-by"><span class="dot"></span>AmCham Egypt</p>
+        <h3>Digital Marketing</h3>
+        <p>American Chamber of Commerce in Egypt</p>
+        <p class="ar" lang="ar">تسويق رقمي من الغرفة التجارية الأمريكية بمصر.</p>
+      </article>
+      <article class="cert rv" style="--d:160ms">
+        <p class="cert-by"><span class="dot"></span>Anthropic</p>
+        <h3>AI &amp; Claude Certificates</h3>
+        <p>Anthropic Academy</p>
+        <p class="ar" lang="ar">دي اللي بتخليني أبني سيستمز بالـAI مش بس أستخدمه.</p>
+      </article>
+    </div>
+
+    <dl class="edu">
+      <div class="rv"><dt>Education</dt><dd>B.Tech, Autotronics<small>Beni-Suef Technological University · 2026</small></dd></div>
+      <div class="rv" style="--d:80ms"><dt>Arabic</dt><dd>Native<small>Writes in Egyptian and Gulf dialects</small></dd></div>
+      <div class="rv" style="--d:160ms"><dt>English</dt><dd>B1 · Intermediate<small>Used daily in call center work</small></dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ 06 CONTACT ============ -->
+<section class="contact" id="contact" style="padding-top:0">
+  <div class="wrap">
+    <div class="cta-block">
+      <div class="sec-tag rv"><b>06</b><span class="dot"></span>Contact</div>
+      <div class="anchor third"></div>
+      <h2 class="rv">Need a marketer who <em>thinks</em> first?</h2>
+      <p class="ar rv" lang="ar">ابعتلي، وهرد عليك في نفس اليوم.</p>
+      <div class="cta rv">
+        <a class="btn btn-light" href="mailto:ahmedshiref08@gmail.com?subject=Marketing%20role">Let's talk <span class="arw">→</span></a>
+        <a class="btn btn-line-light" href="assets/Ahmed_Sherif_CV.pdf" download>Download CV <span class="arw down">↓</span></a>
+      </div>
+      <div class="ways rv">
+        <a href="mailto:ahmedshiref08@gmail.com"><div><small>Email</small><span>ahmedshiref08@gmail.com</span></div><i>→</i></a>
+        <a href="https://wa.me/201016739509" target="_blank" rel="noopener"><div><small>Phone · WhatsApp</small><span>+20 101 673 9509</span></div><i>→</i></a>
+        <a href="https://www.linkedin.com/in/ahmedsherif-growth" target="_blank" rel="noopener"><div><small>LinkedIn</small><span>/in/ahmedsherif-growth</span></div><i>→</i></a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Ahmed Sherif</span>
+    <span>Digital Marketing Specialist · Egypt</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var nav = document.getElementById('nav');
+  addEventListener('scroll', function(){ nav.classList.toggle('scrolled', scrollY > 8); }, {passive:true});
+
+  // Reveal
+  var items = document.querySelectorAll('.rv, .anchor');
+  if (!('IntersectionObserver' in window) || reduce) {
+    items.forEach(function(el){ el.classList.add('in'); });
+  } else {
+    var io = new IntersectionObserver(function(es){
+      es.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.08});
+    items.forEach(function(el){ io.observe(el); });
+    // safety: never leave content hidden
+    setTimeout(function(){ document.querySelectorAll('.hero .rv, .hero .anchor').forEach(function(el){ el.classList.add('in'); }); }, 1200);
+  }
+
+  // Count up
+  if (!reduce && 'IntersectionObserver' in window) {
+    var co = new IntersectionObserver(function(es){
+      es.forEach(function(e){
+        if (!e.isIntersecting) return;
+        co.unobserve(e.target);
+        var el = e.target, end = +el.getAttribute('data-count'), t0 = null, dur = 1100;
+        function step(t){ if(!t0) t0 = t; var p = Math.min(1,(t-t0)/dur); p = 1-Math.pow(1-p,3); el.textContent = Math.round(end*p); if(p<1) requestAnimationFrame(step); else el.textContent = end; }
+        requestAnimationFrame(step);
+      });
+    }, {threshold:0.6});
+    document.querySelectorAll('[data-count]').forEach(function(el){ co.observe(el); });
+  }
+
+  // Active section
+  var ids = ['top','method','proof','skills','experience','certificates','contact'];
+  var links = document.querySelectorAll('.nav-links a, .rail a');
+  function setActive(){
+    var y = scrollY + innerHeight*0.35, cur = 'top';
+    ids.forEach(function(id){ var el = document.getElementById(id); if (el && el.getBoundingClientRect().top + scrollY <= y) cur = id; });
+    links.forEach(function(a){ a.classList.toggle('on', a.getAttribute('href') === '#'+cur); });
+  }
+  addEventListener('scroll', setActive, {passive:true}); setActive();
+})();
+</script>
+</body>
+</html>
